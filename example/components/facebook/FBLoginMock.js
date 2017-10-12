@@ -1,6 +1,6 @@
 'use strict';
 var React = require('react');
-var ReactNative = require('react-native');
+var {ViewPropTypes} = ReactNative = require('react-native');
 var PropTypes = require('prop-types');
 
 var {
@@ -15,7 +15,7 @@ var FBLoginManager = require('NativeModules').FBLoginManager;
 
 var FBLoginMock = React.createClass({
   propTypes: {
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
     onPress: PropTypes.func,
     onLogin: PropTypes.func,
     onLogout: PropTypes.func,
